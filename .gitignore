@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# IDE and OS-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# SQLite database
+*.sqlite
