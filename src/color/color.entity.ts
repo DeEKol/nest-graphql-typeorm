@@ -1,9 +1,10 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, Unique } from 'typeorm';
 import { ObjectType, Field, ID } from '@nestjs/graphql';
 
 // ! Название таблицы из Color.php
 @ObjectType()
 @Entity('v_color')
+@Unique(['c_name'])
 export class Color {
     @Field(() => ID)
     @PrimaryGeneratedColumn()
